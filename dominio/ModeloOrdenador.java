@@ -1,40 +1,50 @@
-
 package dominio;
 public class ModeloOrdenador{
-private String identificadorDeModelo;
-private int memoriaRam;
-private int discoDuro;
-private String marca;
-private String modeloDeProcesador;
-private String tieneOrdenadorOfertado;
+    private int identificadorDeModelo;
+    private int memoriaRam;
+    private int discoDuro;
+    private String marca;
+    private String modeloDeProcesador;
 
-public void setModeloOrdenador(String nuevaMarca){
-marca = nuevaMarca;
-}
+    public void setIdentificadorDeModelo(int nuevoIdentificadorDeModelo){
+        identificadorDeModelo = nuevoIdentificadorDeModelo;
+    }
 
-public String getIdentificadorDeModelo(){
-return identificadorDeModelo;   
-}
+    public int getIdentificadorDeModelo(){
+        return identificadorDeModelo;
+    }
 
-public int getMemoriaRam(){
-return memoriaRam;
-}
+    public void setMemoriaRam(int nuevaMemoriaRam){
+        memoriaRam = nuevaMemoriaRam;
+    }
 
-public String getMarca(){
-return marca;
-}
+    public int getMemoriaRam(){
+        return memoriaRam;
+    }
 
-public String getModeloDeprocesador(){
-return modeloDeProcesador;
-}
+    public void setDiscoDuro(int nuevoDiscoDuro){
+        discoDuro = nuevoDiscoDuro;
+    }
 
-public String getTieneOrdenadorOfertado(){
-return tieneOrdenadorOfertado;
-}
+    public void setMarca(String nuevaMarca){
+        marca = nuevaMarca;
+    }
 
-public String toString(){
-return memoriaRam + "\nDiscoDuro" + discoDuro + marca + modeloDeProcesador;
+    public String getMarca(){
+        return marca;
+    }
 
-}
+    public void setModeloDeProcesador(String nuevoModeloDeProcesador){
+        modeloDeProcesador = nuevoModeloDeProcesador;
+    }
+
+    public String getModeloDeProcesador(){
+        return modeloDeProcesador;
+    }
+
+    public String toString(){
+        return "\nIdentificador de modelo: " + identificadorDeModelo + "\nMemoria ram: " + memoriaRam + "GB" + "\nTamaño del disco duro: " + discoDuro + "TB" + "\nMarca: " + marca + "\nModelo de procesador: " + modeloDeProcesador;
+
+    }
 
 }
