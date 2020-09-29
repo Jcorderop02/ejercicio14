@@ -1,13 +1,14 @@
+package aplicacion;
 import dominio.*;
-public class Principal {
-    public static void inicio(){
+public class principal {
+    public static void main(String[] args){
 
         ModeloOrdenador modeloOrdenador1 = new ModeloOrdenador();
-        modeloOrdenador1.setIdentificadorDeModelo(6327462);
+        modeloOrdenador1.setIdentificadorDeModelo("GT76 Titan DT 10SGS 042ES");
         modeloOrdenador1.setMemoriaRam(16);
         modeloOrdenador1.setDiscoDuro(3);
-        modeloOrdenador1.setMarca("Asus");
-        modeloOrdenador1.setModeloDeProcesador("Ryzen 9 3900x");
+        modeloOrdenador1.setMarca("MSI");
+        modeloOrdenador1.setModeloDeProcesador("i9-10900K");
 
         OfertaOrdenador ofertaOrdenador1 = new OfertaOrdenador();
         ofertaOrdenador1.setPrecioInicial(3000);

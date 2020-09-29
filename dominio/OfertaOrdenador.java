@@ -3,11 +3,11 @@ public class OfertaOrdenador{
 
  private int precioInicial;
  private int descuento;
- private ModeloOrdenador modeloDeProcesador;
+ private ModeloOrdenador tieneOrdenadorOfertado;
 
 
  public void setModelo(ModeloOrdenador modelo){
-  modeloDeProcesador = modelo;
+  tieneOrdenadorOfertado  = modelo;
  }
 
  public int calcularPrecioFinal(){
@@ -18,23 +18,11 @@ public class OfertaOrdenador{
   precioInicial = nuevoPrecioInicial;
  }
 
- public int getPrecioInicial(){
-  return precioInicial;
- }
-
  public void setDescuento(int nuevoDescuento){
   descuento = nuevoDescuento;
  }
 
- public int getDescuento(){
-  return descuento;
- }
-
- public void setOfertaOrdenador(int nuevoPrecioInicial){
-  precioInicial = nuevoPrecioInicial;
- }
-
  public String toString(){
-  return "OfertaOrdenador: " + "\nPrecio inicial: "+ precioInicial + "\nDescuento: " + descuento + "\nModeloOrdenador" + modeloDeProcesador;
+  return "Oferta Ordenador: " + "\n -Precio inicial: "+ precioInicial + "€" + "\n -Descuento: " + descuento + "€" + "\nModelo del Ordenador: " + tieneOrdenadorOfertado + "\n -Precio final del ordenador: " + calcularPrecioFinal() + "€";
  }
 }    
