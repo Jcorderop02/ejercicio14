@@ -16,6 +16,21 @@ public class principal {
         ofertaOrdenador1.setModelo(modeloOrdenador1);
 
         System.out.println(ofertaOrdenador1);
+
+        ModeloOrdenador modeloOrdenador2 = new ModeloOrdenador();
+        modeloOrdenador2.setIdentificadorDeModelo("TITAN");
+        modeloOrdenador2.setMemoriaRam(8);
+        modeloOrdenador2.setDiscoDuro(1);
+        modeloOrdenador2.setMarca("Asus");
+        modeloOrdenador2.setModeloDeProcesador("i7-7700k");
+
+        OfertaOrdenador ofertaOrdenador2 = new OfertaOrdenador();
+        ofertaOrdenador2.setDescuento(300);
+        ofertaOrdenador2.setPrecioInicial(4000);
+        ofertaOrdenador2.setModelo(modeloOrdenador2);
+
+        System.out.println(ofertaOrdenador2);
     }
+
 
 }
